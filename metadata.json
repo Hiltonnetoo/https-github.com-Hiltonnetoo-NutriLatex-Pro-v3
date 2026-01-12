@@ -1,0 +1,5 @@
+{
+  "name": "NutriLatex Pro - Clinical Meal Plan Generator",
+  "description": "A professional tool for clinical nutritionists to generate high-quality LaTeX-based meal plans for their patients, featuring automated PDF code generation using AI.",
+  "requestFramePermissions": []
+}

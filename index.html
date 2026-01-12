@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriLatex Pro - PDF Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: #f1f5f9;
+        }
+        @media print {
+            .no-print { display: none; }
+        }
+        /* Custom styles for LaTeX-like high fidelity */
+        .latex-page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm 15mm;
+            margin: 10px auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        .verde-clinico-bg { background-color: #2E8B57; }
+        .verde-clinico-text { color: #2E8B57; }
+        .fundo-suave-bg { background-color: #F5FFFA; }
+        .alertred-border { border-color: #B22222; }
+        .alertred-bg { background-color: rgba(178, 34, 34, 0.05); }
+        .receita-bg { background-color: #FFFAF0; }
+        .laranja-receita { color: #FF8C00; }
+        .laranja-receita-border { border-color: #FF8C00; }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #e2e8f0; padding: 8px; text-align: left; }
+        .hgt-table th { background-color: #2E8B57; color: white; font-size: 10px; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
